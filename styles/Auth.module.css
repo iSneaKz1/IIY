@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #333333;
+    background: var(--primary);
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -10,7 +10,7 @@
 }
 
 .form {
-    background: #404040;
+    background: var(--tertiary);
     width: clamp(250px, 85%, 350px);
     height: fit-content;
     padding: 10px;
@@ -25,7 +25,7 @@
     height: 35px;
     padding: 4px;
     border-radius: 3px;
-    background: #494949;
+    background: var(--quaternary);
     border: #393939 1px solid;
     color: white;
 }
@@ -35,7 +35,7 @@
     border: none;
     height: 25px;
     padding: 4px 16px;
-    background: #0095ff;
+    background: var(--accent);
     color: white;
     font-weight: 550;
     border-radius: 5px;
@@ -45,8 +45,8 @@
     transform: scale(.95);
 }
 .button:disabled{
-    color: #999999;
-    background: #555555;
+    color: var(--disabled);
+    background: var(--quinary);
 }
 .field {
     padding: 4px 0;
@@ -73,7 +73,7 @@
 }
 
 .smallButton:active{
-    color: #0095ff;
+    color: var(--accent);
 }
 @keyframes pop {
     0% {

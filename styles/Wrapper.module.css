@@ -1,0 +1,16 @@
+.nav {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    background: var(--tertiary);
+
+    border-bottom: #505050 1px solid;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}

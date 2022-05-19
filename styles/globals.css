@@ -1,12 +1,34 @@
 html,
 body {
+
+
+  --primary: #333333;
+  --secondary: #393939;
+  --tertiary: #404040;
+  --quaternary: #494949;
+  --quinary: #555555;
+  --accent: #0095ff;
+  --color: white;
+  --disabled: #999999;
+
+
+
+
+
+
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
-  background: #333333;
+  background: var(--primary);
   color: white;
+
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+
 }
 button{
   transition: 150ms linear;
@@ -22,4 +44,27 @@ a {
 
 * {
   box-sizing: border-box;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  border-radius: 8px;
 }
