@@ -1,5 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import styles from './Auth.module.css'
 import {useMemo, useState} from "react";
 import axios from "axios";
@@ -12,7 +10,9 @@ export default function Auth(props) {
         email: '',
         password: ''
     })
+
     const submit = async () => {
+
         try {
             const result = await axios({
                 url: env.url_server_auth,
@@ -32,6 +32,8 @@ export default function Auth(props) {
     const disabled = useMemo(() => {
         return state.email.length === 0 || state.password.length < 8
     }, [state])
+
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.form}>
@@ -54,8 +56,7 @@ export default function Auth(props) {
                                 submit().catch()
                         }}
                         onChange={(event) => setState({...state, password: event.target.value})} type={"password"}/>
-                    <button className={styles.smallButton} disabled={true}>Esqueci minha senha
-                    </button>
+                    <button className={styles.smallButton} disabled={true}>Esqueci minha senha</button>
                 </div>
                 <div className={styles.field} style={{marginTop: '16px', gap: '8px'}}>
                     <button
@@ -67,7 +68,7 @@ export default function Auth(props) {
                     </button>
                     <button
                         onClick={props.createAccount}
-                        style={{width: '100%', background: "transparent", border: '#393939 1px solid'}}
+                        style={{width: '100%', background: "transparent", border: 'var(--border-primary) 1px solid'}}
                         className={styles.button}>
                         Não cadastrado ?
                     </button>

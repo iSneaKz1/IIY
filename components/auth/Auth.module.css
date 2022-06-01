@@ -5,11 +5,14 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    color: white;
+    color: var(--color-primary);
+
+    background: var(--background-tertiary);
 }
 
 .form {
-    background: #404040;
+
+    background: var(--background-primary);
     width: clamp(250px, 85%, 350px);
     height: fit-content;
     padding: 10px;
@@ -24,9 +27,10 @@
     height: 35px;
     padding: 4px;
     border-radius: 3px;
-    background: #494949;
-    border: #393939 1px solid;
-    color: white;
+
+    background: var(--background-primary);
+    border: var(--border-primary) 1px solid;
+    color: var(--color-primary);
 }
 
 .button {
@@ -34,8 +38,8 @@
     border: none;
     height: 25px;
     padding: 4px 16px;
-    background: #0095ff;
-    color: white;
+    background: var(--accent-color);
+    color: var(--color-primary);
     font-weight: 550;
     border-radius: 5px;
     font-size: .75rem;
@@ -44,8 +48,8 @@
     transform: scale(.95);
 }
 .button:disabled{
-    color: #999999;
-    background: #555555;
+    color: var(--color-quaternary);
+    background: var(--background-secondary);
 }
 .field {
     padding: 4px 0;
@@ -66,16 +70,16 @@
     border: none;
 
     background: transparent;
-    color: white;
+    color: var(--color-primary);
     font-size: .65rem;
     border-radius: 5px;
 }
 .smallButton:disabled{
-    color: #999999 !important;
+    color: var(--color-quaternary) !important;
     cursor: default;
 }
 .smallButton:active{
-    color: #0095ff;
+    color: var(--accent-color);
 }
 @keyframes pop {
     0% {

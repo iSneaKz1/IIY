@@ -2,33 +2,16 @@ html,
 body {
 
 
-  --primary: #333333;
-  --secondary: #393939;
-  --tertiary: #404040;
-  --quaternary: #494949;
-  --quinary: #555555;
-  --accent: #0095ff;
-  --color: white;
-  --disabled: #999999;
-
-
-
-
-
-
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
-  background: var(--primary);
-  color: white;
+
 
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-
-
 }
 button{
   transition: 150ms linear;

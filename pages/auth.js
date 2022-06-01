@@ -9,8 +9,11 @@ const TABS = {
     CREATE: 1
 }
 export default function AuthPage() {
+
+    // hook NEXTJS para roteamento
     const router = useRouter()
     const [on, setOn] = useState(TABS.LOGIN)
+
     return (
         <>
             <Head>

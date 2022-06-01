@@ -1,0 +1,59 @@
+
+.wrapper {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    background: var(--background-primary);
+
+    border-bottom: var(--border-primary) 1px solid;
+
+
+}
+
+.overlay {
+    padding: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: clamp(250px, 75vw, 350px);
+
+    background: var(--background-primary);
+    box-shadow: rgba(0, 0, 0, .2) 2px 4px 10px 5px;
+    z-index: 999;
+
+
+    display: grid;
+    align-content: flex-start;
+    gap: 2px;
+}
+
+
+.navButton {
+    height: 35px;
+    text-align: left;
+
+    outline: none;
+    border: none;
+
+    background: var(--background-primary);
+    color: var(--color-secondary);
+    font-weight: 550;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    border-radius: 5px;
+}
+
+.floating {
+    display: grid;
+    align-content: flex-start;
+    gap: 2px;
+
+    width: calc(100% - 16px);
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+}

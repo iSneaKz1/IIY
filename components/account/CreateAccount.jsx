@@ -1,5 +1,4 @@
-import Head from 'next/head'
-import Image from 'next/image'
+
 import styles from './Account.module.css'
 import {useState} from "react";
 import axios from "axios";
